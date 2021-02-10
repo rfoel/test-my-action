@@ -1,0 +1,14 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: This is a test
+    runs-on: [ubuntu-latest]
+
+    steps:
+      - uses: rfoel/bash-action@v3
